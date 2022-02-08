@@ -15,7 +15,7 @@ import static java.util.stream.Collectors.toList;
 public class Solution {
     public static void main(String[] args) throws IOException {
     	String home = System.getProperty("user.home");
-    	File fIn = new File(home + File.separator + "Desktop" + File.separator + "JavaFile.txt");    	
+    	File fIn = new File(home + File.separator + "Desktop" + File.separator + "JavaIn.txt");    	
     	File fOut = new File(home + File.separator + "Desktop" + File.separator + "JavaOut.txt");    	
 
     	//BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
