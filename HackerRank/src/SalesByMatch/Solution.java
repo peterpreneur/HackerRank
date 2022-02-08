@@ -14,8 +14,15 @@ import static java.util.stream.Collectors.toList;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+    	String home = System.getProperty("user.home");
+    	File fIn = new File(home + File.separator + "Desktop" + File.separator + "JavaFile.txt");    	
+    	File fOut = new File(home + File.separator + "Desktop" + File.separator + "JavaOut.txt");    	
+
+    	//BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(fIn));
+        
+        //BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fOut));
 
         int n = Integer.parseInt(bufferedReader.readLine().trim());
 
